@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>Contact</title>
+    <style>
+        .main {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr 3.6fr 1fr;
+            align-items: center;
+        }
+
+        #intro {
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+
+        .hero-container > img {
+            height: 350px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        footer {
+            margin-top: 2rem;
+        }
+
+        @media (min-width: 976px) and (max-width: 1171px) {
+            .main {
+                grid-template-rows: 0.6fr 1fr 0.2fr;
+                gap: 1rem;
+                align-items: center;
+            }
+
+            .main > nav {
+                flex-direction: column;
+                gap: 0.5rem;
+                justify-content: flex-start;
+                align-items: space-around;
+            }
+        }
+
+        @media (min-width: 600px) and (max-width: 975px) {
+            .main {
+                grid-template-rows: 0.7fr 1.6fr 0.4fr;
+                gap: 1rem;
+                align-items: center;
+            }
+
+            .main > nav {
+                flex-direction: column;
+                gap: 0.5rem;
+                justify-content: flex-start;
+                align-items: space-around;
+            }
+        }
+
+        @media (min-width: 429px) and (max-width: 599px) {
+            .main {
+                grid-template-rows: 0.7fr 1.6fr 0.2fr;
+                gap: 1rem;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 428px) {
+            .main {
+                grid-template-rows: 0.6fr 1.6fr 0.4fr;
+                gap: 1rem;
+                align-items: center;
+            }
+        }
+
+        table {
+            display: flex;
+            justify-content: center;
+        }
+
+        td {
+            padding: 1rem 2rem;
+            text-align: left;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        footer {
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <p>davidscontents.com</p>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./account.html">My Account</a></li>
+            </ul>
+            <div class="btn-container">
+                <button class="btn cta-btn">Book Now</button>
+                <button class="btn info-btn">How to</button>
+            </div>
+        </nav>
+        <div class="hero-container">
+            <h1>Contact Us</h1>
+            <table>
+                <tr>
+                    <td>Mobile:</td>
+                    <td>0123 456 7890</td>
+                </tr>
+                <tr>
+                    <td>E-mail:</td>
+                    <td>davidscontents@google.com</td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td>Cebu, The Philippines</td>
+                </tr>
+                <tr>
+                    <td>Google Map:</td>
+                    <td><a href="https://maps.app.goo.gl/gv372mvgbVdcHL7i6">Click Here</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="cta2-container"><button class="btn cta-btn">Book Now</button></div>
+    </div>
+        <footer>&copy;Copyright reserved by davidscontents 2024</footer>
+    
+</body>
+</html>

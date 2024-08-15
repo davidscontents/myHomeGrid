@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>My Account</title>
+    <style>
+        .main {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 0.8fr 2.8fr 0.9fr;
+            align-items: center;
+        }
+
+        #intro {
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+
+        .submit:hover {
+            box-shadow: 2px 5px #888888;
+        }
+
+        footer {
+            margin-top: 2rem;
+        }
+
+        @media (min-width: 976px) and (max-width: 1171px) {
+            .main {
+                grid-template-rows: 0.8fr 1.2fr 0.2fr;
+                gap: 1rem;
+            }
+
+            .main > nav {
+                flex-direction: column;
+                gap: 0.5rem;
+                justify-content: flex-start;
+                align-items: space-around;
+            }
+        }
+
+        @media (min-width: 600px) and (max-width: 975px) {
+            .main {
+                grid-template-rows: 0.6fr 1.2fr 0.2fr;
+                gap: 1rem;
+            }
+
+            .main > nav {
+                flex-direction: column;
+                gap: 0.5rem;
+                justify-content: flex-start;
+                align-items: space-around;
+            }
+        }
+
+        @media (min-width: 429px) and (max-width: 599px) {
+            .main {
+                grid-template-rows: 0.6fr 1.2fr 0.1fr;
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 428px) {
+            .main {
+                grid-template-rows: 0.6fr 1.2fr 0.1fr;
+                gap: 1rem;
+            }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        label {
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+
+        .input {
+            width: 300px;
+            height: 20px;
+        }
+
+        .submit {
+            padding: 0.6rem 2rem;
+            border: none;
+            border-radius: 2px;
+            color: white;
+            background-color: #C0C0C0;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <p>davidscontents.com</p>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./account.html">My Account</a></li>
+            </ul>
+            <div class="btn-container">
+                <button class="btn cta-btn">Book Now</button>
+                <button class="btn info-btn">How to</button>
+            </div>
+        </nav>
+        <div class="hero-container">
+            <h1>My Account</h1>
+            <form method="post">
+                <label for="email">E-mail:</label>
+                <input class="input" type="text" name="email" required/>
+                <label for="password">Password:</label>
+                <input class="input" type="text" name="password" required />
+                <input class="submit" type="submit" />
+            </form>
+            
+        </div>
+        <div class="cta2-container"><button class="btn cta-btn">Book Now</button></div>
+    </div>
+        <footer>&copy;Copyright reserved by davidscontents 2024</footer>
+    
+</body>
+</html>

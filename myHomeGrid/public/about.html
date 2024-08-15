@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>About Us</title>
+    <style>
+        .main {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr 6fr 1fr;
+        }
+
+        #intro {
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+
+        .hero-container > img {
+            height: 350px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        @media (min-width: 976px) and (max-width: 1171px) {
+            .main {
+                grid-template-rows: 0.8fr 2fr 0.6fr;
+                gap: 1rem;
+            }
+
+            .main > nav {
+                flex-direction: column;
+                gap: 0.5rem;
+                justify-content: flex-start;
+                align-items: space-around;
+            }
+        }
+
+        @media (min-width: 600px) and (max-width: 975px) {
+            .main {
+                grid-template-rows: 0.7fr 2fr 0.4fr;
+                gap: 1rem;
+            }
+
+            .main > nav {
+                flex-direction: column;
+                gap: 0.5rem;
+                justify-content: flex-start;
+                align-items: space-around;
+            }
+
+            .hero-container > img {
+                height: 300px;
+            }
+
+        }
+
+        @media (min-width: 429px) and (max-width: 599px) {
+            .main {
+                grid-template-rows: 0.7fr 2fr 0.2fr;
+                gap: 1rem;
+            }
+
+            .hero-container > img {
+                height: 260px;
+            }
+        }
+
+        @media (max-width: 428px) {
+            .main {
+                grid-template-rows: 0.6fr 2fr 0.4fr;
+                gap: 1rem;
+            }
+
+            .hero-container > img {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <p>davidscontents.com</p>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./account.html">My Account</a></li>
+            </ul>
+            <div class="btn-container">
+                <button class="btn cta-btn">Book Now</button>
+                <button class="btn info-btn">How to</button>
+            </div>
+        </nav>
+        <div class="hero-container">
+            <h1>We offer you a good chance to improve your English in new adventures</h1>
+            <img src="../assets/images/aboutus.jpg" alt="cheering" />
+            <p id="intro">You can make your travel experiences more meaningful <br /> when you have as many chances as to imporve <br /> your communication skills in English. </p>
+
+            
+        </div>
+        <div class="cta2-container"><button class="btn cta-btn">Book Now</button></div>
+    </div>
+        <footer>&copy;Copyright reserved by davidscontents 2024</footer>
+</body>
+</html>
